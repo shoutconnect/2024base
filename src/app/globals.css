@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-title font-extrabold text-slate-800;
+  }
+  h1 {
+    @apply text-6xl max-md:text-5xl;
+  }
+  h2 {
+    @apply text-5xl max-md:text-4xl;
+  }
+  h3 {
+    @apply text-4xl max-md:text-3xl;
+  }
+  h4 {
+    @apply text-3xl max-md:text-2xl;
+  }
+  h5 {
+    @apply text-2xl max-md:text-xl;
+  }
+  h6 {
+    @apply font-sans text-red-600 dark:text-red-700 uppercase tracking-widest;
+  }
+  p,
+  input {
+    @apply font-sans text-slate-500 leading-8;
+  }
+  ::selection {
+    @apply text-white bg-red-600;
+  }
+  .margin-x {
+    @apply px-4 md:px-6 xl:mx-auto max-w-7xl lg:px-8 mx-4;
+  }
+  .margin-y {
+    @apply py-24 max-sm:py-16;
+  }
+  .my-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
+  .absolute-center {
+    @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .grid-margin {
+    @apply rounded-lg p-3 max-lg:p-2 border border-x border-slate-200 shadow-sm my-transition;
+  }
+  .absolute-center {
+    @apply top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
+
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
