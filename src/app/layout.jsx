@@ -3,8 +3,8 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Shout Network",
-  description: "Shout Network",
+  title: "Title",
+  description: "Description",
 };
 
 export default function RootLayout({ children }) {
