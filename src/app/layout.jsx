@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
 
 export const metadata = {
   title: "Title",
@@ -10,6 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html>
+      <CookieConsent />
       <body>
         <Navbar />
         {children}
